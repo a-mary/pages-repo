@@ -5,11 +5,12 @@
     <link rel="icon" type="image/svg+xml" href="/pages-repo/vite.svg"/>
     <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
     <!--    <link href="./src/styles/start-screen.css" rel="stylesheet" type="text/css">-->
+<!--    <link href="src/styles/chat.css" rel="stylesheet" type="text/css">-->
     <title>Vite + TS</title>
-<!--    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">-->
+    <!--    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">-->
 
-  <script type="module" crossorigin src="/pages-repo/assets/index-BqMHZmcc.js"></script>
-  <link rel="stylesheet" crossorigin href="/pages-repo/assets/index-D_9K-zPK.css">
+  <script type="module" crossorigin src="/pages-repo/assets/index-D6GUKKlG.js"></script>
+  <link rel="stylesheet" crossorigin href="/pages-repo/assets/index-D6faDL0N.css">
 </head>
 <body>
 
@@ -71,7 +72,8 @@
     <div id="disconnect-screen" class="disconnect-overlay hidden">
         <div class="disconnect-content">
             <!--    <h2>Connection Lost</h2>-->
-            <h2 id="disconnect-text">You've been disconnected</h2>
+<!--            <h2 id="disconnect-text">You've been disconnected</h2>-->
+            <h2 id="disconnect-text"></h2>
             <!--    <p>You have been disconnected from the server.</p>-->
             <button id="reconnect-button" class="reconnect-button start-btn">Reconnect</button>
             <!--    <button id="quit-button" class="quit-button">Quit</button>-->
@@ -145,6 +147,25 @@
             <!--      <p>Face obstacles and test your skills.</p>-->
             <!--    </div>-->
         </div>
+
+<!--        <div id="user-nickname">-->
+<!--            &lt;!&ndash;            <input id="spawn-nickname" maxlength="15" type="text" placeholder="This is the tale of...">&ndash;&gt;-->
+<!--            <input type="text" id="nickname-input" maxlength="15" autocomplete="off" placeholder="Your nickname"/>-->
+<!--            &lt;!&ndash;autocomplete="off"&ndash;&gt;-->
+<!--        </div>-->
+
+        <div id="nickname-container">
+            <input
+                    type="text"
+                    id="nickname-input"
+                    placeholder="Enter your nickname"
+                    autocomplete="off"
+                    maxlength="15"
+            />
+<!--            <button id="start-game-button">Start Game</button>-->
+        </div>
+
+
         <div class="center-align">
             <button id="start-button" class="start-btn" disabled>Start Game</button>
         </div>
